@@ -75,4 +75,9 @@ $discs_json = '[
 
 $discs = json_decode($discs_json, true);
 
-var_dump($discs);
+/* //var_dump($discs);
+
+foreach($discs as  $disc){
+   
+   // var_dump($disc);
+} */

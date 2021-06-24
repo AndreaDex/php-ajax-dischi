@@ -1,3 +1,7 @@
+<?php 
+include __DIR__ .'/database/disc_data.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,13 +36,19 @@
         <!-- /nav -->
 
         <div class="gallery">
-          <div class="album_card">
-            <img class="poster" :src="" alt="" />
-            <h3></h3>
-            <p></p>
-            <p></p>
-            <p></p>
-          </div>
+            <?php  foreach($discs as  $disc):
+                // var_dump($disc['title']); 
+            ?>
+
+                <div class="album_card">
+                    <img class="poster" src="<?php echo $disc['poster']; ?>" alt="" />
+                    <h3><?php echo $disc['title']; ?></h3>
+                    <p><?php echo $disc['author']; ?></p>
+                    <p><?php echo $disc['year']; ?></p>
+                    <p><?php echo $disc['genre']; ?></p>
+                </div>
+   
+            <?php endforeach ?>
         </div>
       </main>
     
