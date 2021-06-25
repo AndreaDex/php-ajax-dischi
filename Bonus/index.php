@@ -1,6 +1,3 @@
-<?php 
-include __DIR__ .'/database/disc_data.php';
-?>
 
 <!DOCTYPE html>
 <html lang="en">
