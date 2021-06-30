@@ -6,7 +6,7 @@ const app = new Vue({
   methods: {},
   mounted() {
     axios
-      .get("/api/disc_api.php")
+      .get("./api/disc_api.php")
       .then((result) => {
         this.dischi = result.data;
         /*  console.log(this.dischi); */
